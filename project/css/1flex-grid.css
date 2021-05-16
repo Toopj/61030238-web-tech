@@ -1,0 +1,226 @@
+        /*เป็นการทำหน้าคอม*/
+        /*ปรับแต่งส่วน nav*/
+        
+        nav {
+            display: grid;
+            grid-template-columns: 2fr 2fr 2fr;
+            background: url("imagecss/66.jpg") no-repeat center top;
+            margin: 5px;
+            padding: 10px 5px;
+        }
+        /*ปรับแต่งส่วน div*/
+        
+        div {
+            font-size: 1.5em;
+            line-height: 30px;
+            margin: 0px 10px;
+        }
+        /*ปรับแต่งส่วน button*/
+        
+        button {
+            display: flex;
+            background-color: rgb(23, 23, 23);
+            margin: 5px;
+            padding: 10px 5px;
+            width: 230px;
+            height: 130px;
+            font-size: 2em;
+            align-items: center;
+            justify-content: center;
+        }
+        /*ปรับแต่งส่วน acticle*/
+        
+        article {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 240px 240px 240px;
+            grid-gap: 10px;
+            margin: 5px;
+        }
+        /*ปรับแต่งส่วน main การใช้ grid*/
+        
+        main {
+            display: grid;
+            grid-template-columns: 2fr 1fr
+        }
+        /*ปรับแต่งส่วน section*/
+        
+        section {
+            font-size: 2em;
+            background-color: rgb(240, 228, 232);
+            height: 600px;
+            padding: 10px;
+        }
+        /*ปรับแต่งส่วน aside*/
+        
+        aside {
+            font-size: 1em;
+            margin: 5px 5px;
+            padding: 10px;
+            background-color: cadetblue;
+        }
+        /*ปรับแต่งส่วน footer ด้านล่าง*/
+        
+        footer {
+            font-size: 1em;
+            line-height: 50px;
+            margin: 5px 5px;
+            padding: 10px;
+            background: url("imagecss/99.jpg") no-repeat center top;
+            text-align: center;
+        }
+        /*ปรับแต่งส่วน p ตัวอักษร*/
+        
+        p {
+            color: #c1bfbb;
+            font-weight: bold;
+        }
+        
+        .background-header {
+            height: 90vh;
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        /*เป็นขั้นตอนการสร้างปุ่ม*/
+        
+        span {
+            font-family: 'Fredoka One', cursive;
+            color: #000;
+        }
+        /*ปรับแต่งการใช้ grid*/
+        
+        .btn-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+        }
+        /*ปรับแต่งการใช้ปุ่ม*/
+        
+        .btn {
+            height: 90px;
+            border: 2px solid #000;
+            cursor: pointer;
+        }
+        /*กำหนดสีปุ่ม*/
+        
+        .btn-tomato {
+            background-color: #FF6347;
+        }
+        
+        .btn-violet {
+            background-color: #1e101e;
+        }
+        
+        .btn-wheat {
+            background-color: #F5DEB3;
+        }
+        
+        .btn-yellow {
+            background-color: #FFFF00;
+        }
+        
+        .btn-yellowgreen {
+            background-color: #9ACD32;
+        }
+        
+        body {
+            background-color: rgb(59, 59, 90);
+        }
+        /*เป็นการทำหน้าโทรสัพท์*/
+        
+        @media screen and (max-width:500px) {
+            nav {
+                display: grid;
+                grid-template-columns: 2fr 2fr 2fr;
+                background: url("imagecss/66.jpg") no-repeat center top;
+                margin: 5px;
+                padding: 10px 5px;
+            }
+            div {
+                font-size: 1.5em;
+                line-height: 30px;
+                margin: 0px 10px;
+            }
+            button {
+                display: flex;
+                background-color: rgb(23, 23, 23);
+                margin: 5px;
+                padding: 10px 5px;
+                width: 70px;
+                height: 70px;
+                font-size: 1.25em;
+                align-items: center;
+                justify-content: center;
+            }
+            article {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 240px 240px 240px;
+                grid-gap: 10px;
+                margin: 5px;
+            }
+            footer {
+                font-size: 1em;
+                line-height: 50px;
+                margin: 5px 5px;
+                padding: 10px;
+                background: url("imagecss/99.jpg") no-repeat center top;
+                text-align: center;
+            }
+            p {
+                color: #c1bfbb;
+                font-weight: bold;
+            }
+            @import url('https://fonts.googleapis.com/css?family=Fredoka+One');
+            * {
+                box-sizing: border-box;
+            }
+            html {
+                margin: 0;
+                padding: 0;
+            }
+            .background-header {
+                height: 90vh;
+                background: #fff;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+            }
+            span {
+                font-family: 'Fredoka One', cursive;
+                color: #000;
+            }
+            .btn-grid {
+                display: grid;
+                grid-template-rows: repeat(3, 1fr);
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .btn {
+                height: 90px;
+                border: 2px solid #000;
+                cursor: pointer;
+            }
+            .btn-tomato {
+                background-color: #FF6347;
+            }
+            .btn-violet {
+                background-color: #1e101e;
+            }
+            .btn-wheat {
+                background-color: #F5DEB3;
+            }
+            .btn-yellow {
+                background-color: #FFFF00;
+            }
+            .btn-yellowgreen {
+                background-color: #9ACD32;
+            }
+            body {
+                background-color: rgb(59, 59, 90);
+            }
+        }

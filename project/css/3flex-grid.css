@@ -1,0 +1,191 @@
+/*เป็นการทำหน้าคอม*/
+
+
+/*ปรับแต่งส่วน nav*/
+
+nav {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    background: url("imagecss/88.jpg") no-repeat center top;
+    background-position: center;
+    margin: 5px;
+    padding: 10px 5px;
+}
+
+
+/*ปรับแต่งส่วน button*/
+
+button {
+    display: flex;
+    background-color: rgb(23, 23, 23);
+    margin: 5px;
+    padding: 10px 5px;
+    width: 230px;
+    height: 130px;
+    font-size: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*ปรับแต่งส่วน div*/
+
+div {
+    font-size: 1.5em;
+    line-height: 30px;
+    margin: 0px 10px;
+}
+
+
+/*ปรับแต่งส่วน การใช้ grid*/
+
+div:nth-child(3) {
+    grid-column: 6;
+}
+
+
+/*ปรับแต่งส่วน acticle*/
+
+article {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 240px 240px 240px;
+    grid-gap: 10px;
+    margin: 5px;
+}
+
+
+/*ปรับแต่งส่วน main*/
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr
+}
+
+
+/*ปรับแต่งส่วน section*/
+
+section {
+    font-size: 2em;
+    background: url("imagecss/55.jpg") no-repeat center top;
+    font-weight: bold;
+    color: #141312;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+
+/*ปรับแต่งส่วน aside*/
+
+aside {
+    display: flex;
+    font-size: 1em;
+    margin: 5px 5px;
+    padding: 10px;
+    background: #191719 url("imagecss/11.jpg") no-repeat center;
+    flex-direction: column;
+}
+
+
+/*ปรับแต่งส่วน foote ด้านล่าง*/
+
+footer {
+    font-size: 1em;
+    line-height: 50px;
+    margin: 5px 5px;
+    padding: 10px;
+    background: url("imagecss/99.jpg") no-repeat center top;
+    text-align: center;
+}
+
+
+/*ปรับแต่งส่วน p ตัวอักษร*/
+
+p {
+    color: #c1bfbb;
+    font-weight: bold;
+}
+
+
+/*ปรับแต่งส่วน body ตัวอักษร*/
+
+body {
+    background-color: #484769;
+}
+
+
+/*เป็นการทำหน้าโทรสัพท์*/
+
+@media screen and (max-width:500px) {
+    nav {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        background: url("imagecss/88.jpg") no-repeat center top;
+        background-position: center;
+        margin: 5px;
+        padding: 10px 5px;
+    }
+    button {
+        display: flex;
+        background-color: rgb(23, 23, 23);
+        margin: 5px;
+        padding: 10px 5px;
+        width: 70px;
+        height: 70px;
+        font-size: 2em;
+        align-items: center;
+        justify-content: center;
+    }
+    div {
+        font-size: 1.5em;
+        line-height: 30px;
+        margin: 0px 10px;
+    }
+    div:nth-child(3) {
+        grid-column: 6;
+    }
+    article {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 240px 240px 240px;
+        grid-gap: 10px;
+        margin: 5px;
+    }
+    main {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: none;
+    }
+    section {
+        font-size: 2em;
+        background: url("imagecss/55.jpg") no-repeat center top;
+        font-weight: bold;
+        color: #151615;
+        padding: 10px;
+        font-size: 1em;
+    }
+    aside {
+        display: flex;
+        font-size: 1em;
+        margin: 5px 5px;
+        padding: 10px;
+        background: #191719 url("imagecss/11.jpg") no-repeat center;
+        flex-direction: column;
+    }
+    footer {
+        font-size: 1em;
+        line-height: 50px;
+        margin: 5px 5px;
+        padding: 10px;
+        background: url("imagecss/99.jpg") no-repeat center top;
+        text-align: center;
+    }
+    p {
+        color: #c1bfbb;
+        font-weight: bold;
+        font-size: 0.625em;
+    }
+    body {
+        background-color: #484769;
+    }
+}

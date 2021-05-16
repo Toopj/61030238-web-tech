@@ -1,0 +1,57 @@
+<!-- ส่วนหน้า สอง -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/1flex-grid.css">
+    <title>Flexbox layout</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- การสร้างปุ่ม -->
+            <ul>
+                <button onClick><a href="index.html" class="menu"><p>หน้าแรก</p></a> </button>
+            </ul>
+            <ul>
+                <button onClick><a href="2project.html" class="menu"><p>หน้าเกม</p></a> </button>
+            </ul>
+            <ul>
+                <button onClick><a href="3project.html" class="menu"><p>ประวัติส่วนตัว</p></a> </button>
+            </ul>
+        </nav>
+
+    </header>
+    <!-- การสร้างเกมทายเลข -->
+    <div id="bgHead" class="background-header">
+        <h1>เกมทายเลข</h1>
+
+        <p>จงใส่เลขระหว่าง 1 - 10.ขอให้โชคดี.</p>
+
+        <div class="form">
+            <label for="guessField">ใส่ตัวเลข: </label>
+            <input type="text" id="guessField" class="guessField">
+            <input type="submit" value="ยืนยัน" class="guessSubmit" id="submitguess">
+        </div>
+    </div>
+    </section>
+    <!-- การสร้างปุ่มเปลี่ยนสี -->
+    <div class="btn-grid">
+        <div id="btn1" class="btn btn-tomato"></div>
+        <div id="btn2" class="btn btn-violet"></div>
+        <div id="btn3" class="btn btn-wheat"></div>
+        <div id="btn4" class="btn btn-yellow"></div>
+        <div id="btn5" class="btn btn-yellowgreen"></div>
+    </div>
+    <script src="./script/xo.js"></script>
+    <script src="./script/j.js"></script>
+    <footer>ส่วนของเกมและสามารถเปลี่ยนสีของพื้นหลังโดยการกดปุ่มได้บน</footer>
+
+
+
+</body>
+
+</html>
